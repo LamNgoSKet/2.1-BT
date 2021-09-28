@@ -1,0 +1,112 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Demo.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Demo.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Demo.Api.dll": {}
+        }
+      },
+      "Demo.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Demo.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Demo.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Demo.Api/1.0.0": {
+      "type": "project",
+      "path": "../Demo.Api/Demo.Api.csproj",
+      "msbuildProject": "../Demo.Api/Demo.Api.csproj"
+    },
+    "Demo.Models/1.0.0": {
+      "type": "project",
+      "path": "../Demo.Models/Demo.Models.csproj",
+      "msbuildProject": "../Demo.Models/Demo.Models.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Demo.Api >= 1.0.0",
+      "Demo.Models >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\nkoxp\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\DEmo\\Demo\\Demo.Web\\Demo.Web.csproj",
+      "projectName": "Demo.Web",
+      "projectPath": "D:\\DEmo\\Demo\\Demo.Web\\Demo.Web.csproj",
+      "packagesPath": "C:\\Users\\nkoxp\\.nuget\\packages\\",
+      "outputPath": "D:\\DEmo\\Demo\\Demo.Web\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\nkoxp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "D:\\DEmo\\Demo\\Demo.Api\\Demo.Api.csproj": {
+              "projectPath": "D:\\DEmo\\Demo\\Demo.Api\\Demo.Api.csproj"
+            },
+            "D:\\DEmo\\Demo\\Demo.Models\\Demo.Models.csproj": {
+              "projectPath": "D:\\DEmo\\Demo\\Demo.Models\\Demo.Models.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
